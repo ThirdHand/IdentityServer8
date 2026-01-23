@@ -10,7 +10,7 @@
  copies or substantial portions of the Software.
 */
 
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer8.EntityFramework.DbContexts;
 using IdentityServer8.EntityFramework.Mappers;
 using IdentityServer8.EntityFramework.Options;
@@ -26,7 +26,7 @@ public class ClientStoreTests : IntegrationTest<ClientStoreTests, ConfigurationD
 {
     public ClientStoreTests(DatabaseProviderFixture<ConfigurationDbContext> fixture) : base(fixture)
     {
-        foreach (var options in TestDatabaseProviders.SelectMany(x => x.Select(y => (DbContextOptions<ConfigurationDbContext>) y)).ToList())
+        foreach (var options in TestDatabaseProviders)
         {
             using (var context = new ConfigurationDbContext(options, StoreOptions))
             {

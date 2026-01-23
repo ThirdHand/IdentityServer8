@@ -17,7 +17,7 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityModel.Client;
 using IdentityServer.IntegrationTests.Endpoints.Introspection.Setup;
 using IdentityServer8.Extensions;

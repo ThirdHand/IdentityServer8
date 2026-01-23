@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text.Json;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer.UnitTests.Common;
 using IdentityServer8;
 using IdentityServer8.Models;

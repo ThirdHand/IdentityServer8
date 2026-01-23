@@ -10,7 +10,7 @@
  copies or substantial portions of the Software.
 */
 
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityModel;
 using IdentityServer.UnitTests.Validation.Setup;
 using IdentityServer8.Stores;

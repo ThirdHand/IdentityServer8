@@ -13,7 +13,7 @@
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer.UnitTests.Common;
 using IdentityServer8.Validation;
 using Microsoft.AspNetCore.Http;

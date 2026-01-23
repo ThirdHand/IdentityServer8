@@ -10,7 +10,7 @@
  copies or substantial portions of the Software.
 */
 
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer8.EntityFramework.DbContexts;
 using IdentityServer8.EntityFramework.Entities;
 using IdentityServer8.EntityFramework.Interfaces;
@@ -30,7 +30,7 @@ public class TokenCleanupTests : IntegrationTest<TokenCleanupTests, PersistedGra
 
     public TokenCleanupTests(DatabaseProviderFixture<PersistedGrantDbContext> fixture) : base(fixture)
     {
-        foreach (var options in TestDatabaseProviders.SelectMany(x => x.Select(y => (DbContextOptions<PersistedGrantDbContext>)y)).ToList())
+        foreach (var options in TestDatabaseProviders)
         {
             using (var context = new PersistedGrantDbContext(options, StoreOptions))
             {

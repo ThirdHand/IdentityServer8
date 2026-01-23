@@ -12,7 +12,7 @@
 
 using System.Linq;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer8.Configuration;
 using IdentityServer8.Endpoints.Results;
 using IdentityServer8.Validation;

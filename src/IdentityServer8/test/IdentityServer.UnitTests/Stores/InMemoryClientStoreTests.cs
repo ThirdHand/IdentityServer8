@@ -15,7 +15,7 @@ using IdentityServer8.Stores;
 using System;
 using System.Collections.Generic;
 using Xunit;
-using FluentAssertions;
+using AwesomeAssertions;
 
 namespace IdentityServer.UnitTests.Stores
 {

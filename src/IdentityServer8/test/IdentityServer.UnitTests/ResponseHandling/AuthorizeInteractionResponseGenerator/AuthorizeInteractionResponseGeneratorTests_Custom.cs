@@ -11,7 +11,7 @@
 */
 
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer.UnitTests.Common;
 using IdentityServer8;
 using IdentityServer8.Configuration;

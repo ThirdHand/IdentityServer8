@@ -12,7 +12,7 @@
 
 using System.Net;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer.IntegrationTests.Common;
 using Xunit;
 

@@ -13,7 +13,7 @@
 using IdentityServer8.Models;
 using IdentityServer8.Stores;
 using Xunit;
-using FluentAssertions;
+using AwesomeAssertions;
 using System.Threading.Tasks;
 using System.Linq;
 

@@ -11,7 +11,7 @@
 */
 
 using System;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer8.Models;
 using Xunit;
 

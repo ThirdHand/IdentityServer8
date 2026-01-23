@@ -12,7 +12,7 @@
 
 using System;
 using System.Linq;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer8.EntityFramework.Mappers;
 using Xunit;
 using Client = IdentityServer8.Models.Client;

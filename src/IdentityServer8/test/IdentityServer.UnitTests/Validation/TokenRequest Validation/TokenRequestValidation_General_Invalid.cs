@@ -14,7 +14,7 @@ using System;
 using System.Collections.Specialized;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityModel;
 using IdentityServer.UnitTests.Validation.Setup;
 using IdentityServer8;

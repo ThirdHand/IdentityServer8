@@ -10,7 +10,7 @@
  copies or substantial portions of the Software.
 */
 
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer8.Extensions;
 using Microsoft.AspNetCore.Http;
 using Xunit;

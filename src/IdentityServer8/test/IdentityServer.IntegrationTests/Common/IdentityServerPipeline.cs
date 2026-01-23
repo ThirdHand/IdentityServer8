@@ -18,7 +18,7 @@ using System.Net.Http;
 using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityModel.Client;
 using IdentityServer8;
 using IdentityServer8.Configuration;

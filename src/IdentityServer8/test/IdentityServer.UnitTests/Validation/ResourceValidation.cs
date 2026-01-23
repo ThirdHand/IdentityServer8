@@ -13,7 +13,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer.UnitTests.Validation.Setup;
 using IdentityServer8.Extensions;
 using IdentityServer8.Models;

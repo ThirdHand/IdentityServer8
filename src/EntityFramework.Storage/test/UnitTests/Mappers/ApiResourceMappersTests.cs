@@ -11,7 +11,7 @@
 */
 
 using System.Linq;
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer8.EntityFramework.Mappers;
 using Xunit;
 using ApiResource = IdentityServer8.Models.ApiResource;

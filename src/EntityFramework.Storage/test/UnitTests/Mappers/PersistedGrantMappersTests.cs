@@ -10,7 +10,7 @@
  copies or substantial portions of the Software.
 */
 
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityServer8.EntityFramework.Mappers;
 using IdentityServer8.Models;
 using Xunit;

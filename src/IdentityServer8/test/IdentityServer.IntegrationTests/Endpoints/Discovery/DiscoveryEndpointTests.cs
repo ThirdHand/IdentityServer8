@@ -10,7 +10,7 @@
  copies or substantial portions of the Software.
 */
 
-using FluentAssertions;
+using AwesomeAssertions;
 using IdentityModel.Client;
 using IdentityServer.IntegrationTests.Common;
 using IdentityServer8;
