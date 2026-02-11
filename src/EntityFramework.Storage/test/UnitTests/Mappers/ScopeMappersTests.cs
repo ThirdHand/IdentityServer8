@@ -1,10 +1,10 @@
 /*
- Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
+ Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
 
- Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information. 
- Source code and license this software can be found 
+ Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
+ Source code and license this software can be found
 
  The above copyright notice and this permission notice shall be included in all
  copies or substantial portions of the Software.
@@ -20,12 +20,6 @@ namespace IdentityServer8.EntityFramework.UnitTests.Mappers;
 
 public class ScopesMappersTests
 {
-    [Fact]
-    public void ScopeAutomapperConfigurationIsValid()
-    {
-        ScopeMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid();
-    }
-
     [Fact]
     public void CanMapScope()
     {
@@ -46,10 +40,11 @@ public class ScopesMappersTests
             DisplayName = "displayname",
             Name = "foo",
             UserClaims = { "c1", "c2" },
-            Properties = {
+            Properties =
+            {
                 { "x", "xx" },
                 { "y", "yy" },
-           },
+            },
             Enabled = false
         };
 

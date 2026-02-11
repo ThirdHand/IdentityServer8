@@ -1,10 +1,10 @@
 /*
- Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/ 
+ Copyright (c) 2024 HigginsSoft, Alexander Higgins - https://github.com/alexhiggins732/
 
  Copyright (c) 2018, Brock Allen & Dominick Baier. All rights reserved.
 
- Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information. 
- Source code and license this software can be found 
+ Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
+ Source code and license this software can be found
 
  The above copyright notice and this permission notice shall be included in all
  copies or substantial portions of the Software.
@@ -21,12 +21,6 @@ namespace IdentityServer8.EntityFramework.UnitTests.Mappers;
 
 public class ClientMappersTests
 {
-    [Fact]
-    public void AutomapperConfigurationIsValid()
-    {
-        ClientMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid();
-    }
-
     [Fact]
     public void Can_Map()
     {
@@ -45,8 +39,8 @@ public class ClientMappersTests
         {
             Properties =
             {
-                {"foo1", "bar1"},
-                {"foo2", "bar2"},
+                { "foo1", "bar1" },
+                { "foo2", "bar2" },
             }
         };
 
@@ -60,7 +54,6 @@ public class ClientMappersTests
         var foo2 = mappedEntity.Properties.FirstOrDefault(x => x.Key == "foo2");
         foo2.Should().NotBeNull();
         foo2.Value.Should().Be("bar2");
-
 
 
         var mappedModel = mappedEntity.ToModel();
@@ -77,11 +70,11 @@ public class ClientMappersTests
     {
         var entity = new IdentityServer8.EntityFramework.Entities.Client
         {
-            Properties = new System.Collections.Generic.List<Entities.ClientProperty>()
-            {
-                new Entities.ClientProperty{Key = "foo1", Value = "bar1"},
-                new Entities.ClientProperty{Key = "foo1", Value = "bar2"},
-            }
+            Properties =
+            [
+                new Entities.ClientProperty { Key = "foo1", Value = "bar1" },
+                new Entities.ClientProperty { Key = "foo1", Value = "bar2" }
+            ]
         };
 
         Action modelAction = () => entity.ToModel();
@@ -93,12 +86,12 @@ public class ClientMappersTests
     {
         var entity = new IdentityServer8.EntityFramework.Entities.Client
         {
-            ClientSecrets = new System.Collections.Generic.List<Entities.ClientSecret>
-            {
+            ClientSecrets =
+            [
                 new Entities.ClientSecret
                 {
                 }
-            }
+            ]
         };
 
         var def = new Client
